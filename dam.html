@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>project</title>
+</head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+<style>
+body{
+background-color:rgba(0,0,200,0.2);
+}
+#logo{
+	background-color:rgb(159, 238, 244);
+	
+	
+}
+
+
+#logotext{
+	position:relative;
+	left:30px;
+	bottom:30px;
+	font-size:40px;
+	color:purple;
+	font-style:bold;
+}
+
+
+#logopic{
+	position:relative;
+	left:50px;
+	top:40px;
+}
+
+
+#first_title{
+	position: relative;
+	top:20px;
+	left:60px;
+	font-size:20px;
+}
+
+
+#instruct_title{
+	color:red;
+	font-size:20px;
+}
+
+
+
+#list_content{
+	color:black;	
+	font-weight:bold;
+	font-size:20px;
+}
+
+
+
+#firstbox{
+	position: relative;
+	left: 10px;
+	top:30px;
+	background-color:rgb(255, 255, 153);
+	width:600px;
+    border:3px solid black;
+	padding:20px;
+    margin:20px; 
+}
+
+#form_format{
+	beackground-color:rgb(242, 230, 217);
+	font-size:20px;
+	position: relative;
+	left: 40px;
+	top:4px;
+	width:700px;
+	border:3px double black;
+	border-radius:4px;
+	padding:20px;
+	margin:10px;
+}
+
+#returnval{
+	font-size:20px;
+	position: relative;
+	left: 850px;
+	bottom:663px;
+	height:600px;
+	width:400px;
+	background-color:lightblue;
+	border:5px double green;
+	border-radius:4px;
+	padding:20px;
+	margin:10px;
+
+}
+
+#subvalue{
+	font-size:20px;
+	position: relative;
+	left: 1260px;
+	bottom:1274px;
+	height:600px;
+	width:400px;
+	background-color:lightgreen;
+	border:5px double blue;
+	border-radius:4px;
+	padding:20px;
+	margin:10px;
+}
+</style>
+
+<body>
+
+	<div id="webpage">
+		<div id="logo">
+		<img id="logopic" src="PROJECTLOGO.PNG" alt="logo" width="90" height="90"></img>
+		<p id="logotext"><u><b>C</b>ollege<b>D</b>irectory</p></u></div>
+		<h1 id="first_title"><b><u>PLEASE READ THE INSTRUCTION CAREFULLY</u></b></h1>
+		<blockquote>
+			<div id="firstbox">
+			<p id="instruct_title"><b><u>INSTRUCTIONS</b></u></p>
+			<ol>
+				<li><p id="list_content">PLEASE WRITE YOUR FULL NAME</p></li>
+				<li><p id="list_content">PLEASE ENTER A VALID PHONE NUMBER OF 10 DIGITS</p></li>
+				<li><p id="list_content">PLEASE ENTER VALID EMAIL ID</p></li>
+				<li><p id="list_content">PLEASE ENTER YOUR AGE</p></li>
+			</ol>
+			</div>
+			<br>
+	</blockquote>
+	<div id="form_format">
+		<form id="formlist" onsubmit="return false">
+			<br><label for="names">NAME:</label><br><input type="text"  name="names" id="fname" minlength="1" required>
+			<br><label for="number">NUMBER:</label><br><input type="number" id="mobnum" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==10) return false;"  /  required >
+			<br><label for="email">E-mail:</label> <br><input type="email"  id="email" pattern="+@+.+.com" required>
+			<br><label for="int">AGE:</label><br><br><input type="int" id="age" maxlength="2" minlength="1" required>
+			
+		<button onclick="getter()+getter2()">submit</button>
+		</form> 
+		
+	</div>
+	<div id="returnval">
+
+		<p id="getval"></p>
+
+		<div>
+			<p id="etiltle">---------------ENTERED INFO---------------</p>
+			<div> Name: </div>
+			<div id="getval0"></div>
+			<p>   <br>     </p>
+		</div>
+	
+		<div>
+			<div> Number: </div>
+			<div id="getval1"> </div>
+			<p>   <br>     </p>
+		</div>
+		<div>
+			<div> E-mail: </div>
+			<div id="getval2"> </div>
+			<p>   <br>     </p>
+		</div>
+		<div>
+			<div> Age: </div>
+			<div id="getval3"> </div>
+			<p>   <br>     </p>
+		</div>
+	</div>
+
+
+
+	<div id="subvalue">
+		<p id="subtitile">---------------SUB VALUES----------------</p>
+		<div>first letter:</div>
+		<div id="letterf"></div>
+		<p>   <br>     </p>
+		
+		<div>Last letter:</div>
+		<div id="letter"></div>
+		<p>   <br>     </p>
+		
+		<div>sum of number:</div>
+		<div id="returnsum"></div>
+		<p>   <br>     </p>
+		
+		<div>Domain:</div>
+		<div id="returnmail"></div>
+		<p>   <br>     </p>
+		
+		<div>User-name:</div>
+		<div id="returnuser"></div>
+		<p>   <br>     </p>
+		
+		<div>Age category:</div>
+		<div id="returnage"></div>
+		<p>   <br>     </p>
+	</div>
+
+</div>
+
+
+
+<script>
+//submitted values-:
+function getter() {
+	var i,j,flname;
+	var x = document.getElementById("formlist");
+	
+	for (i = 0; i < x.length ;i++) {
+		var text = x.elements[i].value;
+		var id = "getval" + i;
+		document.getElementById(id).innerHTML = text;
+	}
+}
+
+function getter2(){	
+	//first last letter-:
+		var z,y;
+		y=document.getElementById("fname").value;
+		z=document.getElementById("fname").value;
+		var lletter = y.charAt(y.length-1);
+		document.getElementById("letter").innerHTML = lletter;
+		var fletter = z.charAt(0);
+		document.getElementById("letterf").innerHTML = fletter;
+	
+	// for mobile number sum
+	var mob=document.getElementById("mobnum").value;
+	sum=0;
+	while(mob!=0){
+		sum=  (mob%10) + sum;
+		mob= mob/10;
+		mob=mob-(mob%1);
+	}
+	document.getElementById("returnsum").innerHTML=sum;
+	
+	// *********************for email*******************************
+	var mail=document.getElementById("email").value;
+	var atrate=mail.search("@");
+	var dom=mail.slice(atrate,mail.length);
+	var mail1=document.getElementById("email").value;
+	var user=mail1.slice(0,atrate);
+	document.getElementById("returnuser").innerHTML=user;
+		//var k=mail.charAt(mail.length-9);
+		//document.getElementById("returnmail").innerHTML=k;
+	var ddom;
+	switch(dom){
+		case "@gmail.com":
+			ddom="GOOGLE";
+			document.getElementById("returnmail").innerHTML="GOOGLE";
+			break;
+		case "@yahoo.com":
+			ddom="YAHOO";
+			document.getElementById("returnmail").innerHTML="YAHOO";
+			break;
+		case "@hotmail.com":
+			ddom="MICROSOFT";
+			document.getElementById("returnmail").innerHTML="MICROSOFT";
+			break;
+		default:
+			ddom="INVALID DOMAIN!!";
+			document.getElementById("returnmail").innerHTML="INVALID DOMAIN!!";
+		
+	}
+	
+	
+	
+	//for age:-
+		var getage=document.getElementById("age").value;
+		if(getage===0 || getage<=12){
+			document.getElementById("returnage").innerHTML="CHILDREN";
+		}else if(getage===13 || getage<=19){
+			document.getElementById("returnage").innerHTML="TEENAGER";
+		}else if(getage===20 || getage<=35){
+			document.getElementById("returnage").innerHTML="ADULT";
+		}else{
+			document.getElementById("returnage").innerHTML="OLD";
+		}
+}
+
+</script>
+
+</body>
+</html>
+	

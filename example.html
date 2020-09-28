@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>project</title>
+	<meta charset="UTF-8">
+  
+	<meta name="viewport" content="wclassth=device-wclassth, initial-scale=1">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<!-- css file included-->
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="form.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<!-- js file included-->
+	<script src="form.js"></script>
+
+</head>
+
+<body>
+	<div class=" conntainer">
+	<div class="header">
+
+
+	<div class="row my-row1 bg-primary">
+		<div class="col-5 float-sm-right">
+			<img class="logopic float-sm-right" src="PROJECTLOGO.PNG" alt="logo" wclassth="90" height="90"></img>
+		</div>
+		<div class="col-7">
+		<p class="logotext float-sm-left text-light"><b>C</b>ollege<b>D</b>irectory<sub>.com</sub></p>
+	</div>
+	</div>
+	<div class="row my-row2">
+<div class="col-12">
+		<marquee class="movetext" direction = "left" loop="" >
+	        	<div><strong>College will be closed till 30<sup>th</sup> may.&nbsp
+						<strong>Kindly stay at home and stay safe!!!<strong>
+						</div>
+						
+		</marquee>
+		</div>
+		</div>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mL-auto">
+	<li class="nav-item active">
+        <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">STUDENT ZONE <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">GALLERY</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          SOCIAL MEDIA
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">FACEBOOK</a>
+          <a class="dropdown-item" href="#">INSTAGRAM</a>
+          <a class="dropdown-item" href="#">TWITTER</a>
+        </div>
+      </li>
+      
+    </ul>
+  
+  </div>
+</nav>
+		<div class="bgcolour">
+		<h1 class="first_title"><b><u>PLEASE READ THE INSTRUCTION CAREFULLY</u></b></h1>
+		<blockquote>
+			<div class="firstbox"  class="panel panel-warning">
+			<p class="instruct_title"><b><u>INSTRUCTIONS</b></u></p>
+			<ol>
+				<li><p class="list_content">PLEASE WRITE YOUR FULL NAME</p></li>
+				<li><p class="list_content">PLEASE ENTER A VALclass PHONE NUMBER OF 10 DIGITS</p></li>
+				<li><p class="list_content">PLEASE ENTER VALclass EMAIL class</p></li>
+				<li><p class="list_content">PLEASE ENTER YOUR AGE</p></li>
+			</ol>
+			</div>
+			<br>
+	</blockquote>
+	<div  class="panel panel-default" class="form_format">
+		<form class="formlist" onsubmit="return false">
+			<div class="form-group">
+			<br><label for="class">NAME</label><br><input type="text" class="form-control" name="class" class="fname" minlength="1" required>
+			<br><label for="number">NUMBER</label><br><input class="form-control" type="number" class="mobnum" minlength="10" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==10) return false;"  required >
+			<br><label for="email">Email</label> <br><input class="form-control" type="email"  class="email" pattern="+@+.+.com" required>
+			<br><label for="number">AGE</label><br><input class="form-control  type="number" class="age" maxlength="2" minlength="1" required>
+			<br><label for="start">DATE OF BIRTH</label><br><input type="date" class="dofb" name="dob">
+
+
+
+			<br>
+			<br>
+			</div>
+		<button  class="btn btn-primary" onclick="getter()">Submit</button>
+		</form>
+
+
+	</div>
+	<div class="returnval">
+
+		<p class="getval"></p>
+
+		<div>
+	<p class="subtitle">---------------ENTERED INFORMATION----------------</p>
+			<div> Name: </div>
+			<div class="getval0"></div>
+			<p>   <br>     </p>
+		</div>
+
+		<div>
+			<div> Number: </div>
+			<div class="getval1"> </div>
+			<p>   <br>     </p>
+		</div>
+		<div>
+			<div> E-mail: </div>
+			<div class="getval2"> </div>
+			<p>   <br>     </p>
+		</div>
+		<div>
+			<div> Age: </div>
+			<div class="getval3"> </div>
+			<p>   <br>     </p>
+		</div>
+		<div> DOB: </div>
+		<div class="getval4"> </div>
+		<p>   <br>     </p>
+	</div>
+	</div>
+
+
+
+	<div class="subvalue" class="formlist">
+		<p class="subtitle">---------------OTHER INFORMATION----------------</p>
+		<div>First letter:</div>
+		<div class="letterf"></div>
+		<div class="codeletter"></div>
+		<p>   <br>     </p>
+
+		<div>Last letter:</div>
+		<div class="letter"></div>
+		<p>   <br>     </p>
+
+		<div>Sum of number:</div>
+		<div class="returnsum"></div>
+		<p>   <br>     </p>
+
+		<div>Domain:</div>
+		<div class="returnmail"></div>
+		<p>   <br>     </p>
+</div>
+<div class="subvalue2" class="formlist">
+		<div>User-name:</div>
+		<div class="returnuser"></div>
+		<p>   <br>     </p>
+
+		<div>Age category:</div>
+		<div class="returnage"></div>
+		<p>   <br>     </p>
+
+		<div>Age GROUP:</div>
+		<div class="returngrp"></div>
+		<p>   <br>     </p>
+
+		<div>Birthday month:</div>
+		<div class="returnmonth"></div>
+		<p>   <br>     </p>
+
+	</div>
+</div>
+
+
+
+</body>
+</html>

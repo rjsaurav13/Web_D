@@ -1,0 +1,244 @@
+
+html,body {
+  width: 100%;
+  height:100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+
+
+}
+
+
+.carousel-inner  {
+   height: 550px;
+   width:  2400px;
+
+}
+
+.form-control{
+   margin-right: 22px;
+}
+.header{
+
+	position: relative;
+
+
+}
+
+.bgcolour{
+
+
+}
+
+
+p.logotext{
+	position:relative;
+
+
+	font-size:30px;
+  color:rgb(83,83,83);
+	font-style:bold;
+   font-family: 'Sofia';
+
+}
+
+.formhead{
+  font-size:20px;
+  text-align: center;
+}
+.logopic{
+	position:relative;
+
+  bottom:0px;
+
+}
+
+#upperbar{
+	display:inline-block;
+	left:1280px;
+	font-size:19px;
+	bottom:140px;
+
+}
+#upperbar a:hover{
+  color:green;
+  background-color:rgb(230, 230, 230);
+}
+
+#upperbar2{
+	float:right;
+	display:inline-block;
+	left:1280px;
+	font-size:19px;
+	bottom:140px;
+	color:rgb(64, 64, 64);
+}
+
+#upperbar2 a:hover{
+  color:green;
+  background-color:rgb(230, 230, 230);
+
+}
+
+.movetext{
+	position:relative;
+
+  /*background-color:black;*/
+	color:white;
+	font-size: 16px;
+}
+
+.first_title{
+
+  text-align: center;
+
+	font-size:20px;
+
+}
+
+.intro{
+  float:left;
+
+}
+#instruct_title{
+  text-align: center;
+
+	font-size:20px;
+}
+
+
+
+#list_content{
+	color:black;
+	font-weight:bold;
+	font-size:20px;
+    text-align: left;
+}
+
+
+
+.firstbox{
+	position: relative;
+
+  color:white;
+  font-family: 'Corben', Georgia, Times, serif;
+
+	top:0px;
+
+
+
+	padding:20px;
+  margin:20px;
+}
+
+#form_format{
+
+	font-size:20px;
+	position: relative;
+  
+	top:4px;
+	width:700px;
+	border:10px solid black;
+	border-radius:4px;
+	padding:20px;
+	margin:10px;
+  background-color: white;
+}
+
+#returnval{
+  position: relative;
+	font-size:20px;
+	font-family: 'Corben', Georgia, Times, serif;
+
+
+	bottom:2px;
+	height:600px;
+
+  background-color: white;
+border:10px solid ;
+	border-radius:4px;
+	padding:20px;
+	margin:10px;
+display: none;
+
+}
+#subtitle{
+  text-align:center;
+	font-family: 'Corben', Georgia, Times, serif;
+}
+
+#subvalue{
+
+	position:relative;
+  font-size:20px;
+	font-family: 'Corben', Georgia, Times, serif;
+
+	bottom:2px;
+	height:900px;
+
+  background-color: white;
+	border:10px solid ;
+	border-radius:4px;
+	padding:20px;
+	margin:10px;
+  display: none;
+
+}
+
+#subvalue2{
+	font-size:20px;
+	position: relative;
+	font-family: 'Corben', Georgia, Times, serif;
+
+  bottom:20px;
+	height:420px;
+	width:400px;
+
+
+  display: none;
+
+}
+.webfooter{
+  color:white;
+  bottom:100px;
+  width:100%;
+}
+#footerp1{
+  font-size:20px;
+  text-align: center;
+  font-style: italic;
+}
+.logotextt{
+	position:relative;
+
+  left:20px;
+	font-size:30px;
+  color:white;
+	font-style:bold;
+   font-family: 'Sofia';
+
+}
+ul.social li{
+  font-size: 19px;
+  display:inline;
+  float: right;
+
+}
+.social a {
+
+  color: white;
+
+
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+
+}
+.social a:hover {
+  background-color: white;
+  color: black;
+}
+#footerp2{
+  text-align:center;
+}
